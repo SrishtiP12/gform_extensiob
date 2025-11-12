@@ -1,0 +1,84 @@
+.form-suggest-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    z-index: 9999;
+  }
+  
+  .form-suggest-dropdown {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 13px;
+    top: 100%;
+    right: 0;
+    z-index: 9999;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+
+  #autofill-modal {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    font-family: Arial, sans-serif;
+  }
+  
+  #autofill-modal .modal-content {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 420px;
+    max-height: 80vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  
+  #autofill-modal h2, #autofill-modal h3 {
+    margin-top: 0;
+  }
+  
+  #autofill-modal label {
+    display: block;
+    margin: 6px 0;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12px;
+    gap: 10px;
+  }
+  
+  .modal-actions button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #4285f4;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .modal-actions button#cancelConfirm {
+    background-color: #999;
+  }
+  

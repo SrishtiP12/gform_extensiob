@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Form Autofill Helper",
   "version": "1.0",
-  "description": "Auto-suggests saved answers in forms.",
+  "description": "Detects and remembers Google Form fields for autofill.",
   "action": {
     "default_popup": "popup.html",
     "default_icon": "icons/icon128.jpg"
@@ -13,15 +13,15 @@
     "https://docs.google.com/forms/*",
     "https://forms.google.com/*"
   ],
-  "content_scripts": [
-    {
-      "matches": ["https://docs.google.com/forms/*","https://forms.google.com/*"],
-      "js": ["content/content.js"],
-      "type": "module",
-      "run_at": "document_idle"
-    }
-  ],
   "background": {
     "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://docs.google.com/forms/*", "https://forms.google.com/*"],
+      "js": ["content/content.js"],
+      "css": ["content/content.css"],
+      "run_at": "document_idle"
     }
+  ]
 }
